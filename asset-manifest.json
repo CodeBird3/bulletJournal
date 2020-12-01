@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/caitlin-klotz-project-five/static/css/main.39101a7e.chunk.css",
+    "main.js": "/caitlin-klotz-project-five/static/js/main.798bd50a.chunk.js",
+    "main.js.map": "/caitlin-klotz-project-five/static/js/main.798bd50a.chunk.js.map",
+    "runtime-main.js": "/caitlin-klotz-project-five/static/js/runtime-main.f54443cf.js",
+    "runtime-main.js.map": "/caitlin-klotz-project-five/static/js/runtime-main.f54443cf.js.map",
+    "static/js/2.2ab52c3a.chunk.js": "/caitlin-klotz-project-five/static/js/2.2ab52c3a.chunk.js",
+    "static/js/2.2ab52c3a.chunk.js.map": "/caitlin-klotz-project-five/static/js/2.2ab52c3a.chunk.js.map",
+    "static/js/3.32576cec.chunk.js": "/caitlin-klotz-project-five/static/js/3.32576cec.chunk.js",
+    "static/js/3.32576cec.chunk.js.map": "/caitlin-klotz-project-five/static/js/3.32576cec.chunk.js.map",
+    "index.html": "/caitlin-klotz-project-five/index.html",
+    "static/css/main.39101a7e.chunk.css.map": "/caitlin-klotz-project-five/static/css/main.39101a7e.chunk.css.map",
+    "static/js/2.2ab52c3a.chunk.js.LICENSE.txt": "/caitlin-klotz-project-five/static/js/2.2ab52c3a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f54443cf.js",
+    "static/js/2.2ab52c3a.chunk.js",
+    "static/css/main.39101a7e.chunk.css",
+    "static/js/main.798bd50a.chunk.js"
+  ]
+}
