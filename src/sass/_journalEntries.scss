@@ -1,0 +1,182 @@
+.bujoEntries {
+
+    ul {
+        list-style: none;
+
+        li {
+            display: flex;
+            background: linear-gradient(to left, $colour3, $colour2 80%, $colour1 95%);
+            margin: 15px 0;
+            box-shadow: 5px 5px $colour4;
+            position: relative;
+        }
+
+        i, p {
+            padding: 10px;
+        }
+
+        i {
+            width: 100px;
+            color: $colour4;
+        }
+
+        p {
+            width: calc(100% - 100px);
+            text-align: left;
+            color: $colour5;
+        }
+    }
+}
+
+.showButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $colour1;
+    opacity: 0.8;
+    z-index: 10;
+
+    button {
+        display: inline-block;
+        width: 10%;
+        height: 44px;
+        background: transparent;
+        font-size: 2.5rem;
+        color: $colour5;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 0;
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            background: $colour5;
+            color: $colour3;
+        }
+    }
+}
+
+// keep the buttons from the Edit Toolbar from displaying on the list element when the list element is not selected
+.hideButtons {
+    position: absolute;
+    opacity: 0;
+}
+
+// styles for when a button in the Edit Toolbar has been clicked
+.bujoEntries ul {
+
+    // styles for a completed task
+    .completed {
+        background: $colour4;
+        box-shadow: 5px 5px $colour5;
+    
+        i, p {
+            color: $colour1;
+        }
+    }
+
+    // styles for a cancelled task
+    .cancelled {
+        background: $colour3;
+        box-shadow: 5px 5px $colour1;
+
+    }
+}
+
+// edit entry dropdown form styles
+.editForm {
+    background: $colour4;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    position: absolute;
+    bottom: -250px;
+    z-index: 10;
+    transition: all 1s;
+
+    h3 {
+        color: $colour1;
+        text-shadow: 1px 1px $colour5;
+        padding-bottom: 20px;
+    }
+
+    textarea {
+        background: $colour4;
+        width: 500px;
+        height: 150px;
+        border: 3px solid $colour1;
+        border-radius: 10px;
+    }
+
+    button {
+        background: $colour2;
+        font-weight: 700;
+        color: $colour5;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 20px;
+        margin: 15px 30px;
+
+        &:hover, &focus {
+            background: $colour1;
+        }
+
+        &:active {
+            background: $colour3;
+        }
+    }
+
+    .flexEdit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .flexButtons {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+// keep the edit form/confirm delete buttons from displaying on the list element when the edit button/delete button is not selected
+.hideForm {
+    position: absolute;
+    opacity: 0;
+}
+
+// delete entry dropdown styles
+.confirmDelete {
+    background: $colour4;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: -80px;
+    z-index: 10;
+    transition: all 1s;
+
+    h3 {
+        color: $colour1;
+        text-shadow: 1px 1px $colour5;
+    }
+
+    button {
+        background: $colour2;
+        font-weight: 700;
+        color: $colour5;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 20px;
+        margin: 0 30px;
+
+        &:hover, &focus {
+            background: $colour1;
+        }
+
+        &:active {
+            background: $colour3;
+        }
+    }
+}

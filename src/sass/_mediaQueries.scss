@@ -1,0 +1,63 @@
+@media (max-width: 960px) {
+    .header {
+
+        .howToUse {
+
+            ol {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+
+        .howToUse {
+
+            ol {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .newEntryForm {
+        flex-direction: column;
+        
+        .textEntry {
+            align-self: center;
+            width: 95%;
+            height: 300px;
+            margin: 10px 0;
+
+        }
+    }
+}
+
+@media (max-width: 547px) {
+    .header {
+
+        input[type=checkbox]:checked + .howToUse {
+            top: calc(50% - 325px);
+        }
+
+        .howToUse {
+            height: 650px;
+            top: -650px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .header {
+
+        input[type=checkbox]:checked + .howToUse {
+            top: calc(50% - 390px);
+        }
+
+        .howToUse {
+            height: 780px;
+            top: -780px;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+// STRIPPING STYLES
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+// FONT VARIABLES
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=NTR&family=Scheherazade:wght@400;700&display=swap');
+
+$headingFont: 'NTR', sans-serif;
+$subheadingFont: 'Scheherazade', serif;
+$bodyFont: 'Architects Daughter', cursive;
+
+body {
+    font-family: $bodyFont;
+    font-size: 2rem;
+
+    form textarea {
+        font-family: inherit;
+    }
+}
+
+header, footer {
+    font-family: $headingFont;
+}
+
+legend, label, button,
+.confirmDelete h3 {
+    font-family: $subheadingFont;
+}
+
+// COLOUR VARIABLES
+    // COLOUR LAYOUT USING THEME 6:
+        // COLOUR 1
+            // h1, button text
+            // form
+                // background, text background
+$colour1: #eee5d3;
+        // COLOUR 2
+$colour2: #a1eff7;
+        // COLOUR 3
+$colour3: #68e5f3;
+        // COLOUR 4
+            // form
+                // text, hover/focus/clicked fieldset
+            // entries
+                // box shadow
+$colour4: #0e98aa;
+        // COLOUR 5
+            // header background
+            // form
+                // fieldset border, text border, button border/background, active fieldset, textarea text
+$colour5: #074f57;
+        // header background: five colour gradient
+        // entries background: three colour gradient (1, 2, 3)
+
+
+
+    // TODO have colour theme options for the user
+        // mixins?
+        // DEFAULT: THEME 6
+    // THEME 1: LOVELY LILAC?
+        // alice blue: #f4faff
+        // platinum: #dee7e7
+        // blue bell: #b7adcf
+        // english violet: #62466b
+        // cadet: #4f646f
+    // THEME 2: RETRO FLAMINGO
+        // isabelline: #fbf7f4
+        // misty rose: #eed2cc
+        // vivid tangerine: #e8998d
+        // polished pine: #6c9a8b
+        // liver dogs: #a1683a
+    // THEME 3: LAND MEETS SKY
+        // silver: c0c0c0
+        // queen blue: #3a6ea5
+        // yale blue: 004e98
+        // (lighter) olive drab 7: #4a442d
+        // olive drab 7: #3d3522
+    // THEME 4: BUMBLEBEE
+        // flax: #e3d87e
+        // icetrine: #f0ec57
+        // laurel green: #bbcea8
+        // xanadu: #748067
+        // rich black FOGRA 39: #0b0a07
+    // THEME 5: STAINED WOOD
+        // alloy orange: #bc5f04
+        // saddle brown: #874000
+        // dark red: #950000
+        // dark sienna: #2b0504
+        // black: #010001
+    // THEME 6: DAY AT THE BEACH
+        // eggshell: #eee5d3
+        // celeste: #a1eff7;
+        // electric blue: #68e5f3
+        // sky blue crayola: #1dd8ed
+        // blue munsell: #0e98aa
+        // midnight green eagle green: #074f57

@@ -1,0 +1,35 @@
+// import setup snippet and global styles
+@import "setup";
+@import "global";
+
+.App {
+  text-align: center;
+}
+
+// header styles
+@import "header";
+
+// entry form styles
+@import "newEntryForm";
+
+// journal styles
+@import "journalEntries";
+
+// footer styles
+footer {
+  background: $colour5;
+  color: $colour1;
+  padding: 10px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: $colour3;
+    }
+  }
+}
+
+// media queries
+@import "mediaQueries";

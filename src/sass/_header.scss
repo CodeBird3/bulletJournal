@@ -1,0 +1,84 @@
+.header {
+    background: linear-gradient($colour5, $colour4 45%, $colour3 70%, $colour2 80%, $colour1 95%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $colour1;
+
+    label {
+        background: $colour1;
+        font-weight: 700;
+        color: $colour5;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        // REVIEW: is this margin still necessary when the "How it Works" container drops in?
+        // margin-top: 50px;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            background: $colour2;
+        }
+
+        &:active {
+            background: $colour3;
+        }
+    }
+
+    input[type=checkbox] {
+        visibility: hidden;
+        display: block;
+
+        &:checked + .howToUse {
+            top: calc(50% - 275px);
+        }
+    }
+
+    .close {
+        display: inline-block;
+        background: $colour5;
+        color: $colour1;
+        margin-top: 30px;
+
+        &:hover, &:focus {
+            color: $colour5;
+        }
+    }
+
+    .howToUse {
+        width: 90%;
+        height: 550px;
+        background: $colour1;
+        color: $colour5;
+        border: 3px solid $colour5;
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        top: -550px;
+        transition: all 1s;
+        
+        ol {
+            font-size: 2rem;
+            text-align: left;
+
+            li {
+                // NOTE this squishes the text on Safari
+                // line-height: 0.6;
+                padding: 0 10px;
+                margin-left: 30px;
+            }
+            
+            svg {
+                color: $colour4;
+            }
+        }
+
+        .infoSublevel {
+            list-style: lower-alpha;
+            padding-left: 40px;
+        }
+    }
+}

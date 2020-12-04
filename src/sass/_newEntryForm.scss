@@ -1,0 +1,109 @@
+.newEntry {
+    background: $colour1;
+
+    h2 {
+        color: $colour5;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+}
+
+.newEntryForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    color: $colour4;
+    padding: 5px;
+
+    fieldset, textarea, button {
+        border: 3px solid $colour5;
+        border-radius: 10px;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        text-align: left;
+        padding: 0 0 15px;
+
+        // for the Font Awesome Icons:
+        label {
+            display: flex;
+            width: 100%;
+            padding: 0 10px;
+            cursor: pointer;
+
+            .svg-inline--fa {
+                width: 20px;
+                font-size: 1.6rem;
+                margin: auto 0;
+            }
+
+            p {
+                margin-left: 5px;
+            }
+
+            &:hover, &focus {
+                background: $colour4;
+                color: $colour1;
+            }
+
+            &:active {
+                background: $colour5;
+                color: $colour1;
+            }
+        }
+
+        input {
+            visibility: hidden;
+
+            &:checked + label {
+                background: $colour4;
+                color: $colour1;
+            }
+        }
+    }
+
+    .textEntry {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        width: 60%;
+        margin: 0 10px;
+        
+        label {
+            text-align: left;
+        }
+        
+        textarea {
+            align-self: stretch;
+            background: $colour1;
+            color: $colour5;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            
+            &::placeholder {
+                color: $colour4;
+                opacity: 1;
+            }
+        }
+    }
+
+    button {
+        background: $colour5;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $colour1;
+        padding: 10px;
+        cursor: pointer;
+        
+        &:hover, &:focus {
+            background: $colour4;
+            border-color: $colour4;
+        }
+    }
+}
