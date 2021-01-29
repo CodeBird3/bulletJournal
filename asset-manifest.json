@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/caitlin-klotz-project-five/static/css/main.f35c71c1.chunk.css",
-    "main.js": "/caitlin-klotz-project-five/static/js/main.587ec2e0.chunk.js",
-    "main.js.map": "/caitlin-klotz-project-five/static/js/main.587ec2e0.chunk.js.map",
-    "runtime-main.js": "/caitlin-klotz-project-five/static/js/runtime-main.b849848d.js",
-    "runtime-main.js.map": "/caitlin-klotz-project-five/static/js/runtime-main.b849848d.js.map",
-    "static/js/2.33d373a9.chunk.js": "/caitlin-klotz-project-five/static/js/2.33d373a9.chunk.js",
-    "static/js/2.33d373a9.chunk.js.map": "/caitlin-klotz-project-five/static/js/2.33d373a9.chunk.js.map",
-    "static/js/3.9d346294.chunk.js": "/caitlin-klotz-project-five/static/js/3.9d346294.chunk.js",
-    "static/js/3.9d346294.chunk.js.map": "/caitlin-klotz-project-five/static/js/3.9d346294.chunk.js.map",
-    "index.html": "/caitlin-klotz-project-five/index.html",
-    "static/css/main.f35c71c1.chunk.css.map": "/caitlin-klotz-project-five/static/css/main.f35c71c1.chunk.css.map",
-    "static/js/2.33d373a9.chunk.js.LICENSE.txt": "/caitlin-klotz-project-five/static/js/2.33d373a9.chunk.js.LICENSE.txt"
+    "main.css": "/bulletJournal/static/css/main.cc7fabdc.chunk.css",
+    "main.js": "/bulletJournal/static/js/main.0c7aa4a2.chunk.js",
+    "main.js.map": "/bulletJournal/static/js/main.0c7aa4a2.chunk.js.map",
+    "runtime-main.js": "/bulletJournal/static/js/runtime-main.ae5beb0d.js",
+    "runtime-main.js.map": "/bulletJournal/static/js/runtime-main.ae5beb0d.js.map",
+    "static/js/2.d915fa84.chunk.js": "/bulletJournal/static/js/2.d915fa84.chunk.js",
+    "static/js/2.d915fa84.chunk.js.map": "/bulletJournal/static/js/2.d915fa84.chunk.js.map",
+    "static/js/3.1b1f91f3.chunk.js": "/bulletJournal/static/js/3.1b1f91f3.chunk.js",
+    "static/js/3.1b1f91f3.chunk.js.map": "/bulletJournal/static/js/3.1b1f91f3.chunk.js.map",
+    "index.html": "/bulletJournal/index.html",
+    "static/css/main.cc7fabdc.chunk.css.map": "/bulletJournal/static/css/main.cc7fabdc.chunk.css.map",
+    "static/js/2.d915fa84.chunk.js.LICENSE.txt": "/bulletJournal/static/js/2.d915fa84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b849848d.js",
-    "static/js/2.33d373a9.chunk.js",
-    "static/css/main.f35c71c1.chunk.css",
-    "static/js/main.587ec2e0.chunk.js"
+    "static/js/runtime-main.ae5beb0d.js",
+    "static/js/2.d915fa84.chunk.js",
+    "static/css/main.cc7fabdc.chunk.css",
+    "static/js/main.0c7aa4a2.chunk.js"
   ]
 }
