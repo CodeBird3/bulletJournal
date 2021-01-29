@@ -47,7 +47,9 @@ class App extends Component {
         const formattedJournal = {
           id: entryKey,
           symbol: entryVal.symbol,
-          entry: entryVal.entry
+          entry: entryVal.entry,
+          // complete: false,
+          // cancelled: false
         }
         journalEntries.unshift(formattedJournal)
       }
@@ -67,7 +69,9 @@ class App extends Component {
     // turn the chosen symbol and text into a new object
     const newEntryObj = {
       symbol: symbol,
-      entry: entry
+      entry: entry,
+      // complete: false,
+      // cancelled: false
     }
 
     // make a reference to the firebase database
@@ -78,7 +82,7 @@ class App extends Component {
   }
 
   // when the "Confirm Changes" button in the EditEntry form is clicked update the firebase database and state, then render the new data onto the page
-  submitChanges = (e, newText, id) => {
+  submitChanges = (e, newText, entryId) => {
     // prevent default behaviour
     e.preventDefault()
 
@@ -86,10 +90,36 @@ class App extends Component {
     const dbRef = firebase.database().ref()
 
     // update the specific entry's text
-    dbRef.child(id).update({
+    dbRef.child(entryId).update({
       entry: newText
     })
   }
+
+  /*
+  // update firebase when a task is completed
+  handleComplete = (entryId, completeStatus) => {
+    // firebase database reference
+    const dbRef = firebase.database().ref()
+
+    // update the specific entry's complete status
+    dbRef.child(entryId).update({
+      complete: completeStatus
+    })
+  }
+
+  // update firebase when a task is cancelled
+  handleCancelled = (entryId, cancelledStatus) => {
+    // firebase database reference
+    const dbRef = firebase.database().ref()
+
+    console.log(cancelledStatus); // undefined
+
+    update the specific entry's complete status
+    dbRef.child(entryId).update({
+      cancelled: cancelledStatus
+    })
+  }
+  */
 
   // allow the user to delete entries that they no longer want to keep
   deleteEntry = (entryId) => {
@@ -119,6 +149,8 @@ class App extends Component {
                       symbol={entry.symbol}
                       text={entry.entry}
                       submitChanges={this.submitChanges}
+                      completeStatus={this.handleComplete}
+                      cancelledStatus={this.handleCancelled}
                       deleteEntry={this.deleteEntry}
                     />
                   )

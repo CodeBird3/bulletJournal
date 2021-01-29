@@ -5,7 +5,7 @@ class EditToolbar extends Component {
     render() {
 
         // destructure props
-        const { toggleEdit, toggleComplete, toggleCancelled, toggleDelete } = this.props
+        const { toggleEdit, toggleComplete, toggleCancelled, toggleDelete, completeStatus, cancelledStatus } = this.props
 
         return (
             <Fragment>

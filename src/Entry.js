@@ -84,7 +84,8 @@ class Entry extends Component {
     
     render() {
 
-        const { id, symbol, text, submitChanges, deleteEntry } = this.props
+        const { id, symbol, text, submitChanges, completeStatus, cancelledStatus, deleteEntry } = this.props
+        console.log(id);
 
         return (
             <li
@@ -103,6 +104,8 @@ class Entry extends Component {
                         toggleComplete={this.isCompleted}
                         toggleCancelled={this.isCancelled}
                         toggleDelete={this.confirmDelete}
+                        // completeStatus={() => {completeStatus(id, this.isCompleted)}}
+                        // cancelledStatus={() => {cancelledStatus(id, this.isCancelled)}}
                     />
                 </div>
                 {/* form component for edit */}
