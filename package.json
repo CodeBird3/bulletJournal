@@ -1,6 +1,6 @@
 {
   "homepage": "https://codebird3.github.io/bulletJournal",
-  "name": "caitlin-klotz-project-five",
+  "name": "bulletJournal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
